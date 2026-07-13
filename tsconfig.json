@@ -13,6 +13,8 @@
     /* 엄격한 검사 옵션 (에러를 미리 잡는 핵심!) */
     "strict": true,               
     "noUncheckedIndexedAccess": true, 
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     
     /* 기타 추천 옵션 */
     "skipLibCheck": true,         
