@@ -1,0 +1,15 @@
+import { applyDecorators } from '@nestjs/common';
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+
+export const TestControllerDocs = () => {
+  return applyDecorators(
+    ApiTags('Test')
+  );
+};
+
+export const GetHelloDocs = () => {
+  return applyDecorators(
+    ApiOperation({ summary: '헬스 체크 및 블록 넘버 조회 API' }),
+    ApiResponse({ status: 200, description: '성공적으로 조회됨.' })
+  );
+};
