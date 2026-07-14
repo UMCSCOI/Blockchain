@@ -3,7 +3,7 @@ import { TestService } from '../service/test.service.js';
 import { GeneralResponse } from '../../../global/apiPayload/api.response.js';
 import { TestSuccessStatus, TestErrorStatus } from '../code/test.status.js';
 import { TestException } from '../exception/test.exception.js';
-import { TestControllerDocs, GetHelloDocs } from './docs/test.controller.docs.js';
+import { TestControllerDocs, GetHelloDocs, GetExceptionDocs } from './docs/test.controller.docs.js';
 
 @TestControllerDocs()
 @Controller()
@@ -17,6 +17,7 @@ export class TestController {
     return GeneralResponse.onSuccess(TestSuccessStatus.TEST_OK, result)
   }
 
+  @GetExceptionDocs()
   @Get('/exception')
   async getException() {
     throw new TestException(TestErrorStatus.TEST_ERROR)
