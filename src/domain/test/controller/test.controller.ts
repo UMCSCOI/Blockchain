@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { TestService } from '../service/test.service.js';
-import { GeneralResponse } from '../../../global/apiPayload/api.response.js';
+import { GeneralResponse } from '../../../global/apiPayload/general.response.js';
 import { TestSuccessStatus, TestErrorStatus } from '../code/test.status.js';
 import { TestException } from '../exception/test.exception.js';
 import { TestControllerDocs, GetHelloDocs, GetExceptionDocs } from './docs/test.controller.docs.js';

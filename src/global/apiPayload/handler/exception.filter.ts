@@ -1,6 +1,6 @@
 import { ArgumentsHost, Catch, ExceptionFilter, HttpException } from '@nestjs/common';
 import { Response } from 'express';
-import { GeneralResponse } from '../api.response.js';
+import { GeneralResponse } from '../general.response.js';
 import { ErrorStatus } from '../code/status.js';
 import { BlockchainException } from '../exception/blockchain.exception.js';
 

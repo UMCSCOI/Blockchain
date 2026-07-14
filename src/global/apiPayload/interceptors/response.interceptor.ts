@@ -1,7 +1,7 @@
 import { CallHandler, ExecutionContext, Injectable, NestInterceptor } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { GeneralResponse } from '../api.response.js';
+import { GeneralResponse } from '../general.response.js';
 import { SuccessStatus } from '../code/status.js';
 
 @Injectable()
